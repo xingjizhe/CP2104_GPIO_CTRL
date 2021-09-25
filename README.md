@@ -4,6 +4,9 @@ Key steps:
 2. cp cp210x.ko to /lib/modules/<kernel-version>/kernel/drivers/usb/serial
 3. insmod /lib/modules/<kernel-version/kernel/drivers/usb/serial/usbserial.ko
 4. insmod /lib/modules/<kernel-version/kernel/drivers/usb/serial/cp210x.ko
+
+gcc cp210x_gpio_example.c -o CP2104_CTRL
+sudo ./CP2104_CTRL
   
 Notes:
   ls /dev/ttyUSB* to check the device status.
